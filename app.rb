@@ -2,11 +2,8 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 get '/cat' do
-   "<div style='border: 5px dashed red'> 
-     <img src='https://placekitten.com/500/500'>
-    </div>"
+    erb(:index)
 end
-
 
 get '/' do 
     'hello world!'
