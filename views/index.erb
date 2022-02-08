@@ -1,13 +1,12 @@
 
-
 <% if @name %>
 <h1>My name is <%= @name %></h1>
 <% end %>
-<form action="/named-cat">
-    <input type="text" name="name">
+<form action="/named-cat" method="post">
+  <input type="text" name="name">
   <input type="submit" value="Submit">
 </form>
 
 <div> 
-     <img style='border: 5px dashed red' src='https://placekitten.com/500/500'>
-    </div>
+  <img style='border: 5px dashed red' src='https://placekitten.com/500/500'>
+</div>
